@@ -19,20 +19,7 @@ public class Map {
     }   
     //获取所有细胞周围的活细胞数目，并调用Cell类的setLiving函数将其记录到该细胞的属性中
     public static void getLiving(Cell [][]cell){
-    	/*for(int i=0;i<x;i++) {
-    		for(int j=0;j<y;j++) {
-    			int living=0;
-    			if(i>0&&j>0) living+=cell[i-1][j-1].getStatus();
-    			if(i>0) living+=cell[i-1][j].getStatus();
-    			if(j>0) living+=cell[i][j-1].getStatus();
-    			if(i<x-1&&j<x-1) living+=cell[i+1][j+1].getStatus();
-    			if(i<x-1) living+=cell[i+1][j].getStatus();
-    			if(j<x-1) living+=cell[i][j+1].getStatus();
-    			if(i<x-1&&j>0) living+=cell[i+1][j-1].getStatus();
-    			if(i>0&&j<x-1) living+=cell[i-1][j+1].getStatus();
-    			cell[i][j].setLiving(living);
-    		}
-    	}*/
+    
     	//先判断除边界以外的点
     	for(int i=1;i<x-1;i++)
     	{
