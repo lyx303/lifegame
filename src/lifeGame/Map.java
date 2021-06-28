@@ -19,7 +19,7 @@ public class Map {
     }   
     //获取所有细胞周围的活细胞数目，并调用Cell类的setLiving函数将其记录到该细胞的属性中
     public static void getLiving(Cell [][]cell){
-    
+    	
     	//先判断除边界以外的点
     	for(int i=1;i<x-1;i++)
     	{
